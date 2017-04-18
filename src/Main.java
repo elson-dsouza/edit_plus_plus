@@ -39,7 +39,7 @@ public class Main extends JFrame implements ActionListener, DocumentListener {
     private File file;
 
     public Main() {
-        super("Editor");
+        super("Edit++");
         textPane = new JEditorPane();
         add(new JScrollPane(textPane), BorderLayout.CENTER);
         textPane.getDocument().addDocumentListener(this);
@@ -60,7 +60,7 @@ public class Main extends JFrame implements ActionListener, DocumentListener {
 
     private void buildFileMenu() {
         JMenu file = new JMenu("File");
-        file.setMnemonic('F');
+        //file.setMnemonic('F');
         menu.add(file);
         JMenuItem n = new JMenuItem("New");
         n.setMnemonic('N');
