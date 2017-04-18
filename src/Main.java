@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -21,6 +21,7 @@ import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import javax.swing.plaf.FontUIResource;
 
 /**
  * Created by elson on 17/4/17.
@@ -60,31 +61,31 @@ public class Main extends JFrame implements ActionListener, DocumentListener {
 
     private void buildFileMenu() {
         JMenu file = new JMenu("File");
-        //file.setMnemonic('F');
         menu.add(file);
+
         JMenuItem n = new JMenuItem("New");
-        n.setMnemonic('N');
         n.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
         n.addActionListener(this);
         file.add(n);
+
         JMenuItem open = new JMenuItem("Open");
         file.add(open);
         open.addActionListener(this);
-        open.setMnemonic('O');
         open.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK));
+
         JMenuItem save = new JMenuItem("Save");
         file.add(save);
-        save.setMnemonic('S');
         save.addActionListener(this);
         save.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK));
+
         JMenuItem saveas = new JMenuItem("Save as...");
         saveas.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK | InputEvent.SHIFT_MASK));
         file.add(saveas);
         saveas.addActionListener(this);
+
         JMenuItem quit = new JMenuItem("Quit");
         file.add(quit);
         quit.addActionListener(this);
-        quit.setMnemonic('Q');
         quit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, InputEvent.CTRL_DOWN_MASK));
     }
 
