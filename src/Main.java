@@ -113,11 +113,11 @@ public class Main extends JFrame implements ActionListener {
         } else if (action.equals("Open")) {
             loadFile();
         } else if (action.equals("Save")) {
-            //saveFile();
+            tabInstances.get(tabbedPane.getSelectedIndex()).saveFile(this);
         } else if (action.equals("New")) {
             //newFile();
         } else if (action.equals("Save as...")) {
-            //saveAs("Save as...");
+            tabInstances.get(tabbedPane.getSelectedIndex()).saveAs("Save as...",this);
         } else if (action.equals("Select All")) {
             //textPane.selectAll();
         } else if (action.equals("Copy")) {
@@ -140,15 +140,13 @@ public class Main extends JFrame implements ActionListener {
             if (result == JFileChooser.CANCEL_OPTION)
                 return;
             if (result == JFileChooser.APPROVE_OPTION) {
+
                 File file = dialog.getSelectedFile();
                 JTextArea textArea = new JTextArea(100, 100);
                 JScrollPane scrollPane = new JScrollPane(textArea);
                 TextFrame txtFrm = new TextFrame(file, textArea);
                 tabInstances.add(txtFrm);
-
-                int i = tabbedPane.getTabCount();
-                tabbedPane.addTab("Edit++", scrollPane);
-                tabbedPane.setTitleAt(i,file.getName());
+                tabbedPane.addTab(file.getName(), scrollPane);
             }
         } catch (Exception e) {
             e.printStackTrace();
