@@ -1,10 +1,4 @@
-import java.awt.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -17,25 +11,24 @@ import javax.swing.event.DocumentListener;
 public class TextFrame implements DocumentListener {
 
     private JScrollPane tabRootPane;
-    private JTextArea textPane;
+    private JTextArea textArea;
     private boolean changed = false;
     private File file;
 
-    public TextFrame(File file, JTextArea textPane) {
+    public TextFrame(File file, JTextArea textArea) {
         this.file = file;
-        this.textPane = textPane;
-        textPane.getDocument().addDocumentListener(this);
-        //tabRootPane.add(textPane);
-        textPane.setText(readFile(file));
+        this.textArea = textArea;
+        textArea.getDocument().addDocumentListener(this);
+        textArea.setText(readFile(file));
         changed = false;
     }
 
 
     private void newFile() {
         if (changed)
-            saveFile();
+            //saveFile();
         file = null;
-        textPane.setText("");
+        textArea.setText("");
         changed = false;
         //setTitle("Edit++");
     }
@@ -59,18 +52,12 @@ public class TextFrame implements DocumentListener {
         return result.toString();
     }
 
-    private void saveFile() {
-        if (changed) {
-            int ans = JOptionPane.showConfirmDialog(null, "The file has changed. You want to save it?", "Save file",
-                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-            if (ans == JOptionPane.NO_OPTION)
-                return;
-        }
+    public void saveFile(Main main) {
         if (file == null) {
-            saveAs("Save");
+            saveAs("Save",main);
             return;
         }
-        String text = textPane.getText();
+        String text = textArea.getText();
         try (PrintWriter writer = new PrintWriter(file);){
             if (!file.canWrite())
                 throw new Exception("Cannot write file!");
@@ -81,20 +68,20 @@ public class TextFrame implements DocumentListener {
         }
     }
 
-    private void saveAs(String dialogTitle) {
-//        JFileChooser dialog = new JFileChooser(System.getProperty("user.home"));
-//        dialog.setDialogTitle(dialogTitle);
-//        int result = dialog.showSaveDialog(this);
-//        if (result != JFileChooser.APPROVE_OPTION)
-//            return;
-//        file = dialog.getSelectedFile();
-//        try (PrintWriter writer = new PrintWriter(file);){
-//            writer.write(textPane.getText());
-//            changed = false;
-//            setTitle("Edit++ - " + file.getName());
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
+    public void saveAs(String dialogTitle, Main main) {
+        JFileChooser dialog = new JFileChooser(System.getProperty("user.home"));
+        dialog.setDialogTitle(dialogTitle);
+        int result = dialog.showSaveDialog(main);
+        if (result != JFileChooser.APPROVE_OPTION)
+            return;
+        file = dialog.getSelectedFile();
+        try (PrintWriter writer = new PrintWriter(file);){
+            writer.write(textArea.getText());
+            changed = false;
+            //setTitle("Edit++ - " + file.getName());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public void insertUpdate(DocumentEvent e) {
