@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 
 public class Find extends JDialog implements ActionListener, KeyListener {
 
-    Main parent;
+    TextFrame parent;
     JLabel label;
     JTextField textField;
     JCheckBox caseSensitive;
@@ -21,15 +21,15 @@ public class Find extends JDialog implements ActionListener, KeyListener {
     boolean finishedFinding = true;
     Matcher matcher;
 
-    public Find(Main parent, boolean modal) {
-        super(parent, modal);
-        this.parent = parent;
-        getContentPane().addKeyListener(this);
-        getContentPane().setFocusable(true);
-        initComponents();
-        setTitle("Find");
-        setLocationRelativeTo(parent);
-        pack();
+    public Find(TextFrame parent, boolean modal) {
+//        super(parent, modal);
+//        this.parent = parent;
+//        getContentPane().addKeyListener(this);
+//        getContentPane().setFocusable(true);
+//        initComponents();
+//        setTitle("Find");
+//        setLocationRelativeTo(parent);
+//        pack();
     }
 
     public void showDialog() {
@@ -65,22 +65,22 @@ public class Find extends JDialog implements ActionListener, KeyListener {
     }
 
     private void find(String pattern) {
-        if (!finishedFinding) {
-            if (matcher.find()) {
-                int selectionStart = matcher.start();
-                int selectionEnd = matcher.end();
-                parent.textPane.moveCaretPosition(matcher.start());
-                parent.textPane.select(selectionStart, selectionEnd);
-            } else {
-                finishedFinding = true;
-                JOptionPane.showMessageDialog(this, "You have reached the end of the file", "End of file",
-                        JOptionPane.INFORMATION_MESSAGE);
-            }
-        } else {
-            matcher = Pattern.compile(pattern).matcher(parent.textPane.getText());
-            finishedFinding = false;
-            find(pattern);
-        }
+//        if (!finishedFinding) {
+//            if (matcher.find()) {
+//                int selectionStart = matcher.start();
+//                int selectionEnd = matcher.end();
+//                parent.textPane.moveCaretPosition(matcher.start());
+//                parent.textPane.select(selectionStart, selectionEnd);
+//            } else {
+//                finishedFinding = true;
+//                JOptionPane.showMessageDialog(this, "You have reached the end of the file", "End of file",
+//                        JOptionPane.INFORMATION_MESSAGE);
+//            }
+//        } else {
+//            matcher = Pattern.compile(pattern).matcher(parent.textPane.getText());
+//            finishedFinding = false;
+//            find(pattern);
+//        }
     }
 
     public void actionPerformed(ActionEvent e) {
