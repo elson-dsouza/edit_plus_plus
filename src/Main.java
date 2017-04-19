@@ -140,6 +140,7 @@ public class Main extends JFrame implements ActionListener {
         tabInstances.add(txtFrm);
         tabbedPane.addTab("Untitled", scrollPane);
         tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
+        textArea.requestFocusInWindow();
     }
 
     private void loadFile() {
@@ -158,6 +159,7 @@ public class Main extends JFrame implements ActionListener {
                 tabInstances.add(txtFrm);
                 tabbedPane.addTab(file.getName(), scrollPane);
                 tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
+                textArea.requestFocusInWindow();
             }
         } catch (Exception e) {
             e.printStackTrace();

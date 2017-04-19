@@ -40,16 +40,18 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         setLayout(new GridLayout(3, 1));
         JPanel panel1 = new JPanel();
         label = new JLabel("Find : ");
-        label.setDisplayedMnemonic('F');
         panel1.add(label);
+
         textField = new JTextField(15);
         panel1.add(textField);
         label.setLabelFor(textField);
         add(panel1);
+
         JPanel panel2 = new JPanel();
         caseSensitive = new JCheckBox("Case sensitive");
         panel2.add(caseSensitive);
         add(panel2);
+
         JPanel panel3 = new JPanel();
         find = new JButton("Find");
         close = new JButton("Close");
@@ -58,6 +60,7 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         panel3.add(find);
         panel3.add(close);
         add(panel3);
+
         textField.addKeyListener(this);
         find.addKeyListener(this);
         close.addKeyListener(this);
