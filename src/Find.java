@@ -74,7 +74,8 @@ public class Find extends JDialog implements ActionListener, KeyListener {
                 int selectionEnd = matcher.end();
                 parent.textArea.moveCaretPosition(matcher.start());
                 parent.textArea.select(selectionStart, selectionEnd);
-            } else {
+            }
+            else {
                 finishedFinding = true;
                 JOptionPane.showMessageDialog(this, "You have reached the end of the file", "End of file",
                         JOptionPane.INFORMATION_MESSAGE);
