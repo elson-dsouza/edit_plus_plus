@@ -115,21 +115,30 @@ public class Main extends JFrame implements ActionListener {
         } else if (action.equals("Save")) {
             tabInstances.get(tabbedPane.getSelectedIndex()).saveFile(this);
         } else if (action.equals("New")) {
-            //newFile();
+            newFile();
         } else if (action.equals("Save as...")) {
             tabInstances.get(tabbedPane.getSelectedIndex()).saveAs("Save as...",this);
         } else if (action.equals("Select All")) {
-            //textPane.selectAll();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.selectAll();
         } else if (action.equals("Copy")) {
-            //textPane.copy();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.copy();
         } else if (action.equals("Cut")) {
-            //textPane.cut();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.cut();
         } else if (action.equals("Paste")) {
-            //textPane.paste();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
         } else if (action.equals("Find")) {
             /*Find find = new Find(this, true);
             find.showDialog();*/
         }
+    }
+
+    private void newFile() {
+        JTextArea textArea = new JTextArea(100, 100);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        TextFrame txtFrm = new TextFrame(null, textArea);
+        tabInstances.add(txtFrm);
+        tabbedPane.addTab("Untitled", scrollPane);
+        tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
     }
 
     private void loadFile() {
@@ -147,6 +156,7 @@ public class Main extends JFrame implements ActionListener {
                 TextFrame txtFrm = new TextFrame(file, textArea);
                 tabInstances.add(txtFrm);
                 tabbedPane.addTab(file.getName(), scrollPane);
+                tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
             }
         } catch (Exception e) {
             e.printStackTrace();

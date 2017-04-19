@@ -10,8 +10,7 @@ import javax.swing.event.DocumentListener;
 
 public class TextFrame implements DocumentListener {
 
-    private JScrollPane tabRootPane;
-    private JTextArea textArea;
+    protected JTextArea textArea;
     private boolean changed = false;
     private File file;
 
@@ -19,22 +18,9 @@ public class TextFrame implements DocumentListener {
         this.file = file;
         this.textArea = textArea;
         textArea.getDocument().addDocumentListener(this);
-        textArea.setText(readFile(file));
+        if(file!=null)
+            textArea.setText(readFile(file));
         changed = false;
-    }
-
-
-    private void newFile() {
-        if (changed)
-            //saveFile();
-        file = null;
-        textArea.setText("");
-        changed = false;
-        //setTitle("Edit++");
-    }
-
-    private void loadFile() {
-
     }
 
     private String readFile(File file) {
@@ -78,7 +64,6 @@ public class TextFrame implements DocumentListener {
         try (PrintWriter writer = new PrintWriter(file);){
             writer.write(textArea.getText());
             changed = false;
-            //setTitle("Edit++ - " + file.getName());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
