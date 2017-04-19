@@ -127,8 +127,8 @@ public class Main extends JFrame implements ActionListener {
         } else if (action.equals("Paste")) {
             tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
         } else if (action.equals("Find")) {
-            /*Find find = new Find(this, true);
-            find.showDialog();*/
+            Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true,this);
+            find.showDialog();
         }
     }
 
