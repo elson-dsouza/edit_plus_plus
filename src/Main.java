@@ -10,15 +10,12 @@ import java.io.File;
 import java.util.ArrayList;
 
 /**
- * Created by elson on 18/4/17.
+ * Created by Elson on 18/4/17.
  */
 
 public class Main extends JFrame implements ActionListener {
 
     private JMenuBar menu;
-    private JMenuItem cut;
-    private JMenuItem copy;
-    private JMenuItem paste;
     private JTabbedPane tabbedPane;
     private ArrayList<TextFrame> tabInstances;
 
@@ -26,7 +23,7 @@ public class Main extends JFrame implements ActionListener {
         new Main("Edit++");
     }
 
-    public Main(String s) {
+    private Main(String s) {
         super(s);
 
         menu = new JMenuBar();
@@ -82,17 +79,17 @@ public class Main extends JFrame implements ActionListener {
         JMenu edit = new JMenu("Edit");
         menu.add(edit);
 
-        cut = new JMenuItem("Cut");
+        JMenuItem cut = new JMenuItem("Cut");
         cut.addActionListener(this);
         cut.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_DOWN_MASK));
         edit.add(cut);
 
-        copy = new JMenuItem("Copy");
+        JMenuItem copy = new JMenuItem("Copy");
         copy.addActionListener(this);
         copy.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_DOWN_MASK));
         edit.add(copy);
 
-        paste = new JMenuItem("Paste");
+        JMenuItem paste = new JMenuItem("Paste");
         paste.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_DOWN_MASK));
         edit.add(paste);
         paste.addActionListener(this);

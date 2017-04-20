@@ -8,20 +8,18 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by elson on 17/4/17.
+ * Created by Elson on 17/4/17.
  */
 
 public class Find extends JDialog implements ActionListener, KeyListener {
 
-    TextFrame parent;
-    JLabel label;
-    JTextField textField;
-    JCheckBox caseSensitive;
-    JButton find, close;
-    boolean finishedFinding = true;
-    Matcher matcher;
+    private TextFrame parent;
+    private JTextField textField;
+    private JCheckBox caseSensitive;
+    private boolean finishedFinding = true;
+    private Matcher matcher;
 
-    public Find(TextFrame parent, boolean modal, Main main) {
+    Find(TextFrame parent, boolean modal, Main main) {
         super(main, modal);
         this.parent = parent;
         getContentPane().addKeyListener(this);
@@ -33,14 +31,14 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         textField.requestFocusInWindow();
     }
 
-    public void showDialog() {
+    void showDialog() {
         setVisible(true);
     }
 
     private void initComponents() {
         setLayout(new GridLayout(3, 1));
         JPanel panel1 = new JPanel();
-        label = new JLabel("Find : ");
+        JLabel label = new JLabel("Find : ");
         panel1.add(label);
 
         textField = new JTextField(15);
@@ -54,8 +52,8 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         add(panel2);
 
         JPanel panel3 = new JPanel();
-        find = new JButton("Find");
-        close = new JButton("Close");
+        JButton find = new JButton("Find");
+        JButton close = new JButton("Close");
         find.addActionListener(this);
         close.addActionListener(this);
         panel3.add(find);

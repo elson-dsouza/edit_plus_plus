@@ -10,11 +10,11 @@ import javax.swing.event.DocumentListener;
 
 public class TextFrame implements DocumentListener {
 
-    protected JTextArea textArea;
+    JTextArea textArea;
     private boolean changed = false;
     private File file;
 
-    public TextFrame(File file, JTextArea textArea) {
+    TextFrame(File file, JTextArea textArea) {
         this.file = file;
         this.textArea = textArea;
         textArea.getDocument().addDocumentListener(this);
@@ -38,7 +38,7 @@ public class TextFrame implements DocumentListener {
         return result.toString();
     }
 
-    public void saveFile(Main main) {
+    void saveFile(Main main) {
         if (file == null) {
             saveAs("Save",main);
             return;
@@ -54,7 +54,7 @@ public class TextFrame implements DocumentListener {
         }
     }
 
-    public void saveAs(String dialogTitle, Main main) {
+    void saveAs(String dialogTitle, Main main) {
         JFileChooser dialog = new JFileChooser(System.getProperty("user.home"));
         dialog.setDialogTitle(dialogTitle);
         int result = dialog.showSaveDialog(main);
