@@ -30,6 +30,7 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         setTitle("Find");
         setLocationRelativeTo(main);
         pack();
+        textField.requestFocusInWindow();
     }
 
     public void showDialog() {
@@ -65,6 +66,7 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         find.addKeyListener(this);
         close.addKeyListener(this);
         caseSensitive.addKeyListener(this);
+
     }
 
     private void find(String pattern) {
