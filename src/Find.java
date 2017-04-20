@@ -120,4 +120,3 @@ public class Find extends JDialog implements ActionListener, KeyListener {
     public void keyReleased(KeyEvent keyEvent){}
 
 }
-

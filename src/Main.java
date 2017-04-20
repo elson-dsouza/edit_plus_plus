@@ -1,6 +1,7 @@
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -141,9 +142,40 @@ public class Main extends JFrame implements ActionListener {
         TextFrame txtFrm = new TextFrame(null, textArea);
         tabInstances.add(txtFrm);
         tabbedPane.addTab("Untitled", scrollPane);
-        tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
+        int i = tabbedPane.getTabCount()-1;
+        setTabClosable(i, tabbedPane.getTitleAt(i));
+        tabbedPane.setSelectedIndex(i);
         textArea.requestFocusInWindow();
 
+    }
+
+    private void setTabClosable(int index, String title) {
+        JPanel pnlTab = new JPanel(new GridBagLayout());
+        pnlTab.setOpaque(false);
+        JLabel lblTitle = new JLabel(title);
+        JButton btnClose = new JButton("x");
+
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.weightx = 1;
+
+        pnlTab.add(lblTitle, gbc);
+
+        gbc.gridx++;
+        gbc.weightx = 0;
+        pnlTab.add(btnClose, gbc);
+
+        tabbedPane.setTabComponentAt(index, pnlTab);
+
+        btnClose.addActionListener(actionEvent -> {
+            Component selected = tabbedPane.getSelectedComponent();
+            if (selected != null) {
+                int index1 = tabbedPane.indexOfComponent(selected);
+                tabInstances.remove(index1);
+                tabbedPane.remove(selected);
+            }
+        });
     }
 
     private void loadFile() {
@@ -161,7 +193,9 @@ public class Main extends JFrame implements ActionListener {
                 TextFrame txtFrm = new TextFrame(file, textArea);
                 tabInstances.add(txtFrm);
                 tabbedPane.addTab(file.getName(), scrollPane);
-                tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
+                int i = tabbedPane.getTabCount()-1;
+                setTabClosable(i, tabbedPane.getTitleAt(i));
+                tabbedPane.setSelectedIndex(i);
                 textArea.requestFocusInWindow();
 
             }
