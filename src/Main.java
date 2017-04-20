@@ -1,53 +1,39 @@
-import java.awt.*;
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.swing.JEditorPane;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.KeyStroke;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
-import javax.swing.plaf.FontUIResource;
+import java.util.ArrayList;
 
 /**
- * Created by elson on 17/4/17.
+ * Created by elson on 18/4/17.
  */
 
-public class Main extends JFrame implements ActionListener, DocumentListener {
+public class Main extends JFrame implements ActionListener {
+
+    private JMenuBar menu;
+    private JMenuItem cut;
+    private JMenuItem copy;
+    private JMenuItem paste;
+    private JTabbedPane tabbedPane;
+    private ArrayList<TextFrame> tabInstances;
 
     public static  void main(String[] args) {
-        new Main();
+        new Main("Edit++");
     }
 
-    public JEditorPane textPane;
-    private JMenuBar menu;
-    private JMenuItem copy, paste, cut;
-    public boolean changed = false;
-    private File file;
-
-    public Main() {
-        super("Edit++");
-        textPane = new JEditorPane();
-        add(new JScrollPane(textPane), BorderLayout.CENTER);
-        textPane.getDocument().addDocumentListener(this);
+    public Main(String s) {
+        super(s);
 
         menu = new JMenuBar();
         setJMenuBar(menu);
         buildMenu();
+
+        tabbedPane = new JTabbedPane();
+        add(tabbedPane);
+
+        tabInstances =new ArrayList<>();
 
         setSize(500, 500);
         setVisible(true);
@@ -92,72 +78,69 @@ public class Main extends JFrame implements ActionListener, DocumentListener {
     private void buildEditMenu() {
         JMenu edit = new JMenu("Edit");
         menu.add(edit);
-        edit.setMnemonic('E');
 
         cut = new JMenuItem("Cut");
         cut.addActionListener(this);
         cut.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_DOWN_MASK));
-        cut.setMnemonic('T');
         edit.add(cut);
 
         copy = new JMenuItem("Copy");
         copy.addActionListener(this);
-        copy.setMnemonic('C');
         copy.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_DOWN_MASK));
         edit.add(copy);
 
         paste = new JMenuItem("Paste");
-        paste.setMnemonic('P');
         paste.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_DOWN_MASK));
         edit.add(paste);
         paste.addActionListener(this);
 
         JMenuItem find = new JMenuItem("Find");
-        find.setMnemonic('F');
         find.addActionListener(this);
         edit.add(find);
         find.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_DOWN_MASK));
 
         JMenuItem sall = new JMenuItem("Select All");
-        sall.setMnemonic('A');
         sall.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_DOWN_MASK));
         sall.addActionListener(this);
         edit.add(sall);
     }
 
-    public void actionPerformed(ActionEvent e) {
-        String action = e.getActionCommand();
+
+    @Override
+    public void actionPerformed(ActionEvent actionEvent) {
+        String action = actionEvent.getActionCommand();
         if (action.equals("Quit")) {
             System.exit(0);
         } else if (action.equals("Open")) {
             loadFile();
         } else if (action.equals("Save")) {
-            saveFile();
+            tabInstances.get(tabbedPane.getSelectedIndex()).saveFile(this);
         } else if (action.equals("New")) {
             newFile();
         } else if (action.equals("Save as...")) {
-            saveAs("Save as...");
+            tabInstances.get(tabbedPane.getSelectedIndex()).saveAs("Save as...",this);
         } else if (action.equals("Select All")) {
-            textPane.selectAll();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.selectAll();
         } else if (action.equals("Copy")) {
-            textPane.copy();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.copy();
         } else if (action.equals("Cut")) {
-            textPane.cut();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.cut();
         } else if (action.equals("Paste")) {
-            textPane.paste();
+            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
         } else if (action.equals("Find")) {
-            Find find = new Find(this, true);
+            Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true,this);
             find.showDialog();
         }
     }
 
     private void newFile() {
-        if (changed)
-            saveFile();
-        file = null;
-        textPane.setText("");
-        changed = false;
-        setTitle("Editor");
+        JTextArea textArea = new JTextArea(100, 100);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        TextFrame txtFrm = new TextFrame(null, textArea);
+        tabInstances.add(txtFrm);
+        tabbedPane.addTab("Untitled", scrollPane);
+        tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
+        textArea.requestFocusInWindow();
     }
 
     private void loadFile() {
@@ -168,82 +151,20 @@ public class Main extends JFrame implements ActionListener, DocumentListener {
             if (result == JFileChooser.CANCEL_OPTION)
                 return;
             if (result == JFileChooser.APPROVE_OPTION) {
-                if (changed)
-                    saveFile();
-                file = dialog.getSelectedFile();
-                textPane.setText(readFile(file));
-                changed = false;
-                setTitle("Editor - " + file.getName());
+
+                File file = dialog.getSelectedFile();
+                JTextArea textArea = new JTextArea(100, 100);
+                JScrollPane scrollPane = new JScrollPane(textArea);
+                TextFrame txtFrm = new TextFrame(file, textArea);
+                tabInstances.add(txtFrm);
+                tabbedPane.addTab(file.getName(), scrollPane);
+                tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
+                textArea.requestFocusInWindow();
+
             }
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-
-    private String readFile(File file) {
-        StringBuilder result = new StringBuilder();
-        try (	FileReader fr = new FileReader(file);
-                 BufferedReader reader = new BufferedReader(fr);) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                result.append(line + "\n");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Cannot read file !", "Error !", JOptionPane.ERROR_MESSAGE);
-        }
-        return result.toString();
-    }
-
-    private void saveFile() {
-        if (changed) {
-            int ans = JOptionPane.showConfirmDialog(null, "The file has changed. You want to save it?", "Save file",
-                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-            if (ans == JOptionPane.NO_OPTION)
-                return;
-        }
-        if (file == null) {
-            saveAs("Save");
-            return;
-        }
-        String text = textPane.getText();
-        try (PrintWriter writer = new PrintWriter(file);){
-            if (!file.canWrite())
-                throw new Exception("Cannot write file!");
-            writer.write(text);
-            changed = false;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void saveAs(String dialogTitle) {
-        JFileChooser dialog = new JFileChooser(System.getProperty("user.home"));
-        dialog.setDialogTitle(dialogTitle);
-        int result = dialog.showSaveDialog(this);
-        if (result != JFileChooser.APPROVE_OPTION)
-            return;
-        file = dialog.getSelectedFile();
-        try (PrintWriter writer = new PrintWriter(file);){
-            writer.write(textPane.getText());
-            changed = false;
-            setTitle("Editor - " + file.getName());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void insertUpdate(DocumentEvent e) {
-        changed = true;
-    }
-
-    public void removeUpdate(DocumentEvent e) {
-        changed = true;
-    }
-
-    public void changedUpdate(DocumentEvent e) {
-        changed = true;
-    }
-
 }
