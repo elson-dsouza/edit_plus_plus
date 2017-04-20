@@ -141,6 +141,7 @@ public class Main extends JFrame implements ActionListener {
         tabbedPane.addTab("Untitled", scrollPane);
         tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
         textArea.requestFocusInWindow();
+        
     }
 
     private void loadFile() {
