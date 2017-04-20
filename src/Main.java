@@ -2,10 +2,7 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -37,7 +34,13 @@ public class Main extends JFrame implements ActionListener {
 
         setSize(500, 500);
         setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent windowEvent) {
+                close();
+                super.windowClosing(windowEvent);
+            }
+        });
     }
 
     private void buildMenu() {
@@ -105,31 +108,41 @@ public class Main extends JFrame implements ActionListener {
         edit.add(sall);
     }
 
-
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         String action = actionEvent.getActionCommand();
-        if (action.equals("Quit")) {
-            System.exit(0);
-        } else if (action.equals("Open")) {
-            loadFile();
-        } else if (action.equals("Save")) {
-            tabInstances.get(tabbedPane.getSelectedIndex()).saveFile(this);
-        } else if (action.equals("New")) {
-            newFile();
-        } else if (action.equals("Save as...")) {
-            tabInstances.get(tabbedPane.getSelectedIndex()).saveAs("Save as...",this);
-        } else if (action.equals("Select All")) {
-            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.selectAll();
-        } else if (action.equals("Copy")) {
-            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.copy();
-        } else if (action.equals("Cut")) {
-            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.cut();
-        } else if (action.equals("Paste")) {
-            tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
-        } else if (action.equals("Find")) {
-            Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true,this);
-            find.showDialog();
+        switch (action) {
+            case "Quit":
+                close();
+                break;
+            case "Open":
+                loadFile();
+                break;
+            case "Save":
+                tabInstances.get(tabbedPane.getSelectedIndex()).saveFile(this);
+                break;
+            case "New":
+                newFile();
+                break;
+            case "Save as...":
+                tabInstances.get(tabbedPane.getSelectedIndex()).saveAs("Save as...", this);
+                break;
+            case "Select All":
+                tabInstances.get(tabbedPane.getSelectedIndex()).textArea.selectAll();
+                break;
+            case "Copy":
+                tabInstances.get(tabbedPane.getSelectedIndex()).textArea.copy();
+                break;
+            case "Cut":
+                tabInstances.get(tabbedPane.getSelectedIndex()).textArea.cut();
+                break;
+            case "Paste":
+                tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
+                break;
+            case "Find":
+                Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true, this);
+                find.showDialog();
+                break;
         }
     }
 
@@ -162,8 +175,9 @@ public class Main extends JFrame implements ActionListener {
         btnClose.addActionListener(actionEvent -> {
             Component selected = tabbedPane.getSelectedComponent();
             if (selected != null) {
-                int index1 = tabbedPane.indexOfComponent(selected);
-                tabInstances.remove(index1);
+                int i = tabbedPane.indexOfComponent(selected);
+                tabInstances.get(i).close(this);
+                tabInstances.remove(i);
                 tabbedPane.remove(selected);
             }
         });
@@ -194,5 +208,11 @@ public class Main extends JFrame implements ActionListener {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
         }
+    }
+
+    private void close() {
+        for(int i=0;i<tabbedPane.getTabCount();i++)
+            tabInstances.get(i).close(this);
+        System.exit(0);
     }
 }

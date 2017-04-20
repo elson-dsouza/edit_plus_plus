@@ -69,6 +69,16 @@ public class TextFrame implements DocumentListener {
         }
     }
 
+    public void close(Main main){
+        if (changed) {
+            int ans = JOptionPane.showConfirmDialog(null, "The file has been changed. You want to save it?", "Save file",
+                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+            if (ans == JOptionPane.NO_OPTION)
+                return;
+            saveFile(main);
+        }
+    }
+
     @Override
     public void insertUpdate(DocumentEvent e) {
         changed = true;
