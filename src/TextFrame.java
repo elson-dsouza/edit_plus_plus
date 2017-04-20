@@ -5,7 +5,7 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 /**
- * Created by elson on 17/4/17.
+ * Created by Elson on 17/4/17.
  */
 
 public class TextFrame implements DocumentListener {
@@ -26,10 +26,10 @@ public class TextFrame implements DocumentListener {
     private String readFile(File file) {
         StringBuilder result = new StringBuilder();
         try (	FileReader fr = new FileReader(file);
-                 BufferedReader reader = new BufferedReader(fr);) {
+                 BufferedReader reader = new BufferedReader(fr)) {
             String line;
             while ((line = reader.readLine()) != null) {
-                result.append(line + "\n");
+                result.append(line).append("\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -44,7 +44,7 @@ public class TextFrame implements DocumentListener {
             return;
         }
         String text = textArea.getText();
-        try (PrintWriter writer = new PrintWriter(file);){
+        try (PrintWriter writer = new PrintWriter(file)){
             if (!file.canWrite())
                 throw new Exception("Cannot write file!");
             writer.write(text);
@@ -61,7 +61,7 @@ public class TextFrame implements DocumentListener {
         if (result != JFileChooser.APPROVE_OPTION)
             return;
         file = dialog.getSelectedFile();
-        try (PrintWriter writer = new PrintWriter(file);){
+        try (PrintWriter writer = new PrintWriter(file)){
             writer.write(textArea.getText());
             changed = false;
         } catch (FileNotFoundException e) {
