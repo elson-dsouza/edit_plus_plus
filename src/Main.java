@@ -150,22 +150,16 @@ public class Main extends JFrame implements ActionListener {
     }
 
     private void setTabClosable(int index, String title) {
-        JPanel pnlTab = new JPanel(new GridBagLayout());
+        JPanel pnlTab = new JPanel(new BorderLayout());
         pnlTab.setOpaque(false);
         JLabel lblTitle = new JLabel(title);
         JButton btnClose = new JButton("x");
+        btnClose.setOpaque(false);
+        btnClose.setContentAreaFilled(false);
+        btnClose.setBorderPainted(false);
 
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.weightx = 1;
-
-        pnlTab.add(lblTitle, gbc);
-
-        gbc.gridx++;
-        gbc.weightx = 0;
-        pnlTab.add(btnClose, gbc);
-
+        pnlTab.add(lblTitle,BorderLayout.WEST);
+        pnlTab.add(btnClose, BorderLayout.EAST);
         tabbedPane.setTabComponentAt(index, pnlTab);
 
         btnClose.addActionListener(actionEvent -> {
