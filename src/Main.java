@@ -1,3 +1,5 @@
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -134,7 +136,7 @@ public class Main extends JFrame implements ActionListener {
     }
 
     private void newFile() {
-        JTextArea textArea = new JTextArea(100, 100);
+        RSyntaxTextArea textArea = new RSyntaxTextArea();
         JScrollPane scrollPane = new JScrollPane(textArea);
         TextFrame txtFrm = new TextFrame(null, textArea);
         tabInstances.add(txtFrm);
@@ -154,7 +156,7 @@ public class Main extends JFrame implements ActionListener {
             if (result == JFileChooser.APPROVE_OPTION) {
 
                 File file = dialog.getSelectedFile();
-                JTextArea textArea = new JTextArea(100, 100);
+                RSyntaxTextArea textArea = new RSyntaxTextArea();
                 JScrollPane scrollPane = new JScrollPane(textArea);
                 TextFrame txtFrm = new TextFrame(file, textArea);
                 tabInstances.add(txtFrm);
