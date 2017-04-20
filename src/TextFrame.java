@@ -69,14 +69,17 @@ public class TextFrame implements DocumentListener {
         }
     }
 
+    @Override
     public void insertUpdate(DocumentEvent e) {
         changed = true;
     }
 
+    @Override
     public void removeUpdate(DocumentEvent e) {
         changed = true;
     }
 
+    @Override
     public void changedUpdate(DocumentEvent e) {
         changed = true;
     }

@@ -89,6 +89,7 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         }
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         String cmd = e.getActionCommand();
         if (cmd.equals("Find")) {
@@ -109,14 +110,17 @@ public class Find extends JDialog implements ActionListener, KeyListener {
         dispose();
     }
 
+    @Override
     public void keyTyped(KeyEvent e) {}
 
+    @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
             closeDialog();
         }
     }
 
+    @Override
     public void keyReleased(KeyEvent keyEvent){}
 
 }
