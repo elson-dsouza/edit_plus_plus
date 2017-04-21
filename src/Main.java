@@ -201,7 +201,11 @@ public class Main extends JFrame implements ActionListener {
 
                 File file = dialog.getSelectedFile();
                 RSyntaxTextArea textArea = new RSyntaxTextArea();
+                textArea.setCodeFoldingEnabled(true);
+
                 RTextScrollPane scrollPane = new RTextScrollPane(textArea);
+                scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+
                 TextFrame txtFrm = new TextFrame(file, textArea);
                 tabInstances.add(txtFrm);
                 tabbedPane.addTab(file.getName(), scrollPane);
