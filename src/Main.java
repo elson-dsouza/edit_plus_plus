@@ -1,4 +1,5 @@
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
@@ -149,7 +150,11 @@ public class Main extends JFrame implements ActionListener {
 
     private void newFile() {
         RSyntaxTextArea textArea = new RSyntaxTextArea();
+        textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+        textArea.setCodeFoldingEnabled(true);
+
         RTextScrollPane scrollPane = new RTextScrollPane(textArea);
+
         TextFrame txtFrm = new TextFrame(null, textArea);
         tabInstances.add(txtFrm);
         tabbedPane.addTab("Untitled", scrollPane);
