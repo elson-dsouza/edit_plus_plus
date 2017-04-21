@@ -154,6 +154,7 @@ public class Main extends JFrame implements ActionListener {
         textArea.setCodeFoldingEnabled(true);
 
         RTextScrollPane scrollPane = new RTextScrollPane(textArea);
+        scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
         TextFrame txtFrm = new TextFrame(null, textArea);
         tabInstances.add(txtFrm);
