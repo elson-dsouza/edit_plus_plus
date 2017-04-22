@@ -52,6 +52,7 @@ public class Main extends JFrame implements ActionListener {
         buildFileMenu();
         buildEditMenu();
         buildLanguageMenu();
+        buildHelpMenu();
     }
 
     private void buildLanguageMenu() {
@@ -133,8 +134,43 @@ public class Main extends JFrame implements ActionListener {
         sall.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_DOWN_MASK));
         sall.addActionListener(this);
         edit.add(sall);
+
+        JMenuItem background_color=new JMenuItem("bgcolor");
+        edit.add(background_color);
+        background_color.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Color c=JColorChooser.showDialog(Main.this,"choose color",Color.white);
+                int i=tabbedPane.getSelectedIndex();
+                tabInstances.get(i).textArea.setBackground(c);
+            }
+        });
     }
 
+    private void buildHelpMenu(){
+        JMenu help=new JMenu("Help");
+        menu.add(help);
+        JMenuItem t1=new JMenuItem("about");
+        help.add(t1);
+        t1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                JOptionPane.showMessageDialog(Main.this,"About the software:A simple text editor tool to write various programs");
+
+
+            }
+        });
+
+        JMenuItem t2=new JMenuItem("version");
+        help.add(t2);
+        t2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(Main.this,"Version 1.0");
+            }
+        });
+
+    }
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         String action = actionEvent.getActionCommand();
