@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/Find.class" afterPath="$PROJECT_DIR$/out/production/edit++/Find.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/Main.class" afterPath="$PROJECT_DIR$/out/production/edit++/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/TextFrame.class" afterPath="$PROJECT_DIR$/out/production/edit++/TextFrame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextFrame.java" afterPath="$PROJECT_DIR$/src/TextFrame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +20,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
+            <state relative-caret-position="378">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
-                <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+                <element signature="docComment;class#TextFrame#0" expanded="false" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
                 <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
                 <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
                 <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -31,20 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="207" column="16" lean-forward="false" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
+            <state relative-caret-position="882">
+              <caret line="138" column="57" lean-forward="false" selection-start-line="138" selection-start-column="57" selection-end-line="138" selection-end-column="57" />
               <folding>
                 <element signature="method#Main#0;class#Main#0" expanded="false" />
-                <element signature="e#877#1084#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+                <element signature="e#906#1113#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
                 <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+                <element signature="method#newFile#0;class#Main#0" expanded="false" />
                 <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+                <element signature="method#loadFile#0;class#Main#0" expanded="false" />
                 <element signature="method#close#0;class#Main#0" expanded="false" />
               </folding>
             </state>
@@ -99,8 +106,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Find.java" />
-        <option value="$PROJECT_DIR$/src/TextFrame.java" />
         <option value="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JFrame.class" />
+        <option value="$PROJECT_DIR$/src/TextFrame.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -115,9 +122,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
-    <option name="width" value="1366" />
-    <option name="height" value="772" />
+    <option name="x" value="-1" />
+    <option name="y" value="-11" />
+    <option name="width" value="1368" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,8 +143,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -605,7 +613,8 @@
       <workItem from="1492603963121" duration="5509000" />
       <workItem from="1492615541098" duration="5734000" />
       <workItem from="1492659912106" duration="11053000" />
-      <workItem from="1492793662047" duration="2190000" />
+      <workItem from="1492793662047" duration="2958000" />
+      <workItem from="1492834417212" duration="2658000" />
     </task>
     <task id="LOCAL-00001" summary="Changes done">
       <created>1492496076959</created>
@@ -761,14 +770,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492796145310</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Bug fixes">
+      <created>1492796231189</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1492796231189</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32422000" />
+    <option name="totallyTimeSpent" value="35848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,8 +796,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -792,8 +808,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -861,11 +877,12 @@
     <MESSAGE value="Added line numbers" />
     <MESSAGE value="Set code folding and java trial for now" />
     <MESSAGE value="Vertical Scroll Bar bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vertical Scroll Bar bug fixed" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -879,7 +896,43 @@
         <state relative-caret-position="1314">
           <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="153" column="45" lean-forward="false" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="e#906#1113#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
+          <folding>
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -893,13 +946,14 @@
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#877#1084#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#906#1113#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -910,7 +964,9 @@
         <state relative-caret-position="342">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -924,13 +980,14 @@
           <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="48" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#877#1084#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#906#1113#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -956,7 +1013,9 @@
         <state relative-caret-position="288">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -985,13 +1044,14 @@
           <caret line="151" column="16" lean-forward="true" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#877#1084#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#906#1113#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -1002,7 +1062,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -1016,13 +1078,14 @@
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#877#1084#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#906#1113#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
@@ -1048,7 +1111,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -1061,7 +1126,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -1089,7 +1156,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
@@ -1123,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,33 +1231,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
+        <state relative-caret-position="882">
+          <caret line="138" column="57" lean-forward="false" selection-start-line="138" selection-start-column="57" selection-end-line="138" selection-end-column="57" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="e#906#1113#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="207" column="16" lean-forward="false" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
+        <state relative-caret-position="378">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#877#1084#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
+            <element signature="docComment;class#TextFrame#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
           </folding>
         </state>
       </provider>

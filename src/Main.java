@@ -17,6 +17,7 @@ public class Main extends JFrame implements ActionListener {
     private JMenuBar menu;
     private JTabbedPane tabbedPane;
     private ArrayList<TextFrame> tabInstances;
+    private String language;
 
     public static  void main(String[] args) {
         new Main("Edit++");
@@ -43,11 +44,35 @@ public class Main extends JFrame implements ActionListener {
                 super.windowClosing(windowEvent);
             }
         });
+
+        language = SyntaxConstants.SYNTAX_STYLE_NONE;
     }
 
     private void buildMenu() {
         buildFileMenu();
         buildEditMenu();
+        buildLanguageMenu();
+    }
+
+    private void buildLanguageMenu() {
+        JMenu lang = new JMenu("Language");
+        menu.add(lang);
+
+        JMenuItem t0 = new JMenuItem("Plain Text");
+        t0.addActionListener(this);
+        lang.add(t0);
+
+        JMenuItem t1 = new JMenuItem("Java");
+        t1.addActionListener(this);
+        lang.add(t1);
+
+        JMenuItem t2 = new JMenuItem("C");
+        t2.addActionListener(this);
+        lang.add(t2);
+
+        JMenuItem t3 = new JMenuItem("C++");
+        t3.addActionListener(this);
+        lang.add(t3);
     }
 
     private void buildFileMenu() {
@@ -145,18 +170,33 @@ public class Main extends JFrame implements ActionListener {
                 Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true, this);
                 find.showDialog();
                 break;
+            case "Plain Text":
+                language = SyntaxConstants.SYNTAX_STYLE_NONE;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                break;
+            case "Java":
+                language = SyntaxConstants.SYNTAX_STYLE_JAVA;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                break;
+            case "C":
+                language = SyntaxConstants.SYNTAX_STYLE_C;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                break;
+            case "C++":
+                language = SyntaxConstants.SYNTAX_STYLE_CPLUSPLUS;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                break;
         }
     }
 
     private void newFile() {
         RSyntaxTextArea textArea = new RSyntaxTextArea();
-        textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
         textArea.setCodeFoldingEnabled(true);
 
         RTextScrollPane scrollPane = new RTextScrollPane(textArea);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
-        TextFrame txtFrm = new TextFrame(null, textArea);
+        TextFrame txtFrm = new TextFrame(null, textArea, language);
         tabInstances.add(txtFrm);
         tabbedPane.addTab("Untitled", scrollPane);
         int i = tabbedPane.getTabCount()-1;
@@ -206,7 +246,7 @@ public class Main extends JFrame implements ActionListener {
                 RTextScrollPane scrollPane = new RTextScrollPane(textArea);
                 scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
-                TextFrame txtFrm = new TextFrame(file, textArea);
+                TextFrame txtFrm = new TextFrame(file, textArea, language);
                 tabInstances.add(txtFrm);
                 tabbedPane.addTab(file.getName(), scrollPane);
                 int i = tabbedPane.getTabCount()-1;

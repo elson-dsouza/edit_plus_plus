@@ -1,3 +1,6 @@
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextAreaDefaultInputMap;
+
 import java.io.*;
 
 import javax.swing.*;
@@ -10,17 +13,23 @@ import javax.swing.event.DocumentListener;
 
 public class TextFrame implements DocumentListener {
 
-    JTextArea textArea;
+    RSyntaxTextArea textArea;
     private boolean changed = false;
     private File file;
 
-    TextFrame(File file, JTextArea textArea) {
+    TextFrame(File file, RSyntaxTextArea textArea, String language) {
         this.file = file;
         this.textArea = textArea;
         textArea.getDocument().addDocumentListener(this);
         if(file!=null)
             textArea.setText(readFile(file));
         changed = false;
+
+        setLanguage(language);
+    }
+
+    void setLanguage(String language) {
+        textArea.setSyntaxEditingStyle(language);
     }
 
     private String readFile(File file) {
