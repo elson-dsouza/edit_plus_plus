@@ -1,11 +1,9 @@
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
-import org.fife.ui.rsyntaxtextarea.RSyntaxTextAreaDefaultInputMap;
-
-import java.io.*;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import java.io.*;
 
 /**
  * Created by Elson on 17/4/17.
@@ -78,7 +76,7 @@ public class TextFrame implements DocumentListener {
         }
     }
 
-    public void close(Main main){
+    void close(Main main){
         if (changed) {
             int ans = JOptionPane.showConfirmDialog(null, "The file has been changed. You want to save it?", "Save file",
                     JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
