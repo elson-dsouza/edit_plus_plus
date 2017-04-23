@@ -135,42 +135,37 @@ public class Main extends JFrame implements ActionListener {
         sall.addActionListener(this);
         edit.add(sall);
 
-        JMenuItem background_color=new JMenuItem("bgcolor");
+        JMenuItem background_color=new JMenuItem("Background");
         edit.add(background_color);
-        background_color.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Color c=JColorChooser.showDialog(Main.this,"choose color",Color.white);
-                int i=tabbedPane.getSelectedIndex();
-                tabInstances.get(i).textArea.setBackground(c);
-            }
+        background_color.addActionListener(e -> {
+            Color c = JColorChooser.showDialog(Main.this,"Choose color",Color.white);
+            int i=tabbedPane.getSelectedIndex();
+            tabInstances.get(i).textArea.setBackground(c);
+        });
+
+        JMenuItem text_color=new JMenuItem("Text Colour");
+        edit.add(text_color);
+        text_color.addActionListener(e -> {
+            Color c = JColorChooser.showDialog(Main.this,"Choose color",Color.white);
+            int i = tabbedPane.getSelectedIndex();
+            tabInstances.get(i).textArea.setForeground(c);
         });
     }
 
     private void buildHelpMenu(){
         JMenu help=new JMenu("Help");
         menu.add(help);
-        JMenuItem t1=new JMenuItem("about");
+
+        JMenuItem t1=new JMenuItem("About");
         help.add(t1);
-        t1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e){
-                JOptionPane.showMessageDialog(Main.this,"About the software:A simple text editor tool to write various programs");
+        t1.addActionListener(e -> JOptionPane.showMessageDialog(Main.this,"A simple text editor tool to write various programs built by Elson and Aadithya of M. S. Ramaiah Institute Of Technology as part of a project in the subject Java & J2EE","About",0));
 
-
-            }
-        });
-
-        JMenuItem t2=new JMenuItem("version");
+        JMenuItem t2=new JMenuItem("Version");
         help.add(t2);
-        t2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(Main.this,"Version 1.0");
-            }
-        });
+        t2.addActionListener(e -> JOptionPane.showMessageDialog(Main.this,"Version 1.0","Version",0));
 
     }
+
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         String action = actionEvent.getActionCommand();
