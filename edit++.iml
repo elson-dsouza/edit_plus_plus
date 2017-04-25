@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.fifesoft:rsyntaxtextarea:2.6.1" level="project" />
+    <orderEntry type="library" name="com.fifesoft:languagesupport:2.6.0" level="project" />
   </component>
 </module>
