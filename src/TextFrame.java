@@ -1,9 +1,11 @@
+import org.fife.rsta.ac.LanguageSupport;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.io.*;
+import java.util.HashMap;
 
 /**
  * Created by Elson on 17/4/17.
@@ -15,7 +17,7 @@ public class TextFrame implements DocumentListener {
     private boolean changed = false;
     private File file;
 
-    TextFrame(File file, RSyntaxTextArea textArea, String language) {
+    TextFrame(File file, RSyntaxTextArea textArea, String language,HashMap<String,LanguageSupport> langs) {
         this.file = file;
         this.textArea = textArea;
         textArea.getDocument().addDocumentListener(this);
@@ -23,11 +25,13 @@ public class TextFrame implements DocumentListener {
             textArea.setText(readFile(file));
         changed = false;
 
-        setLanguage(language);
+        setLanguage(language,langs);
     }
 
-    void setLanguage(String language) {
+    void setLanguage(String language,HashMap<String,LanguageSupport> langs) {
         textArea.setSyntaxEditingStyle(language);
+        if(langs.containsKey(language))
+            langs.get(language).install(textArea);
     }
 
     private String readFile(File file) {

@@ -1,5 +1,16 @@
 import org.fife.rsta.ac.LanguageSupport;
+import org.fife.rsta.ac.LanguageSupportFactory;
+import org.fife.rsta.ac.c.CLanguageSupport;
+import org.fife.rsta.ac.css.CssLanguageSupport;
+import org.fife.rsta.ac.groovy.GroovyLanguageSupport;
+import org.fife.rsta.ac.html.HtmlLanguageSupport;
 import org.fife.rsta.ac.java.JavaLanguageSupport;
+import org.fife.rsta.ac.js.JavaScriptLanguageSupport;
+import org.fife.rsta.ac.jsp.JspLanguageSupport;
+import org.fife.rsta.ac.perl.PerlLanguageSupport;
+import org.fife.rsta.ac.php.PhpLanguageSupport;
+import org.fife.rsta.ac.sh.ShellLanguageSupport;
+import org.fife.rsta.ac.xml.XmlLanguageSupport;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
@@ -9,6 +20,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Elson on 18/4/17.
@@ -20,6 +32,7 @@ public class Main extends JFrame implements ActionListener {
     private JTabbedPane tabbedPane;
     private ArrayList<TextFrame> tabInstances;
     private String language;
+    private HashMap<String,LanguageSupport> langs;
 
     public static  void main(String[] args) {
         new Main("Edit++");
@@ -48,6 +61,22 @@ public class Main extends JFrame implements ActionListener {
         });
 
         language = SyntaxConstants.SYNTAX_STYLE_NONE;
+        langs = new HashMap<>();
+        initHashMap();
+    }
+
+    private void initHashMap() {
+        langs.put(SyntaxConstants.SYNTAX_STYLE_C,new CLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_CSS,new CssLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_GROOVY,new GroovyLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_HTML,new HtmlLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_JAVA,new JavaLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_JAVASCRIPT,new JavaScriptLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_JSP,new JspLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_PERL,new PerlLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_PHP,new PhpLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_UNIX_SHELL,new ShellLanguageSupport());
+        langs.put(SyntaxConstants.SYNTAX_STYLE_XML,new XmlLanguageSupport());
     }
 
     private void buildMenu() {
@@ -160,11 +189,11 @@ public class Main extends JFrame implements ActionListener {
 
         JMenuItem t1=new JMenuItem("About");
         help.add(t1);
-        t1.addActionListener(e -> JOptionPane.showMessageDialog(Main.this,"A simple text editor tool to write various programs built by Elson and Aadithya of M. S. Ramaiah Institute Of Technology as part of a project in the subject Java & J2EE","About",0));
+        t1.addActionListener(e -> JOptionPane.showMessageDialog(Main.this,"A simple text editor tool to write various programs built by Elson and Aadithya of M. S. Ramaiah Institute Of Technology as part of a project in the subject Java & J2EE","About",JOptionPane.INFORMATION_MESSAGE));
 
         JMenuItem t2=new JMenuItem("Version");
         help.add(t2);
-        t2.addActionListener(e -> JOptionPane.showMessageDialog(Main.this,"Version 1.0","Version",0));
+        t2.addActionListener(e -> JOptionPane.showMessageDialog(Main.this,"Version 1.0","Version", JOptionPane.INFORMATION_MESSAGE));
 
     }
 
@@ -205,21 +234,19 @@ public class Main extends JFrame implements ActionListener {
                 break;
             case "Plain Text":
                 language = SyntaxConstants.SYNTAX_STYLE_NONE;
-                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
                 break;
             case "Java":
                 language = SyntaxConstants.SYNTAX_STYLE_JAVA;
-                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
-                JavaLanguageSupport javaLanguageSupport = new JavaLanguageSupport();
-                javaLanguageSupport.install(tabInstances.get(tabbedPane.getSelectedIndex()).textArea);
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
                 break;
             case "C":
                 language = SyntaxConstants.SYNTAX_STYLE_C;
-                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
                 break;
             case "C++":
                 language = SyntaxConstants.SYNTAX_STYLE_CPLUSPLUS;
-                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
                 break;
         }
     }
@@ -231,7 +258,7 @@ public class Main extends JFrame implements ActionListener {
         RTextScrollPane scrollPane = new RTextScrollPane(textArea);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
-        TextFrame txtFrm = new TextFrame(null, textArea, language);
+        TextFrame txtFrm = new TextFrame(null, textArea, language,langs);
         tabInstances.add(txtFrm);
         tabbedPane.addTab("Untitled", scrollPane);
         int i = tabbedPane.getTabCount()-1;
@@ -281,7 +308,7 @@ public class Main extends JFrame implements ActionListener {
                 RTextScrollPane scrollPane = new RTextScrollPane(textArea);
                 scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 
-                TextFrame txtFrm = new TextFrame(file, textArea, language);
+                TextFrame txtFrm = new TextFrame(file, textArea, language,langs);
                 tabInstances.add(txtFrm);
                 tabbedPane.addTab(file.getName(), scrollPane);
                 int i = tabbedPane.getTabCount()-1;
