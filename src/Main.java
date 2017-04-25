@@ -1,3 +1,5 @@
+import org.fife.rsta.ac.LanguageSupport;
+import org.fife.rsta.ac.java.JavaLanguageSupport;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
@@ -208,6 +210,8 @@ public class Main extends JFrame implements ActionListener {
             case "Java":
                 language = SyntaxConstants.SYNTAX_STYLE_JAVA;
                 tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language);
+                JavaLanguageSupport javaLanguageSupport = new JavaLanguageSupport();
+                javaLanguageSupport.install(tabInstances.get(tabbedPane.getSelectedIndex()).textArea);
                 break;
             case "C":
                 language = SyntaxConstants.SYNTAX_STYLE_C;
