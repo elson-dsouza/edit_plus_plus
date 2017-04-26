@@ -1,5 +1,4 @@
 import org.fife.rsta.ac.LanguageSupport;
-import org.fife.rsta.ac.LanguageSupportFactory;
 import org.fife.rsta.ac.c.CLanguageSupport;
 import org.fife.rsta.ac.css.CssLanguageSupport;
 import org.fife.rsta.ac.groovy.GroovyLanguageSupport;
@@ -52,6 +51,7 @@ public class Main extends JFrame implements ActionListener {
 
         setSize(500, 500);
         setVisible(true);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent windowEvent) {
@@ -134,7 +134,7 @@ public class Main extends JFrame implements ActionListener {
         JMenuItem quit = new JMenuItem("Quit");
         file.add(quit);
         quit.addActionListener(this);
-        quit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, InputEvent.CTRL_DOWN_MASK));
+        quit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F4, InputEvent.ALT_DOWN_MASK));
     }
 
     private void buildEditMenu() {
@@ -282,14 +282,13 @@ public class Main extends JFrame implements ActionListener {
         tabbedPane.setTabComponentAt(index, pnlTab);
 
         btnClose.addActionListener(actionEvent -> {
-            Component selected = tabbedPane.getSelectedComponent();
-            if (selected != null) {
-                int i = tabbedPane.indexOfComponent(selected);
-                tabInstances.get(i).close(this);
-                tabInstances.remove(i);
-                tabbedPane.remove(selected);
-            }
+            int i = tabbedPane.indexOfTabComponent(pnlTab);
+            if(!tabInstances.get(i).close(this))
+                return;
+            tabInstances.remove(i);
+            tabbedPane.remove(i);
         });
+
     }
 
     private void loadFile() {
@@ -325,7 +324,8 @@ public class Main extends JFrame implements ActionListener {
 
     private void close() {
         for(int i=0;i<tabbedPane.getTabCount();i++)
-            tabInstances.get(i).close(this);
+            if(!tabInstances.get(i).close(this))
+                return;
         System.exit(0);
     }
 }

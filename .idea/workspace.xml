@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="Added autocomplete for table to support all supported languages">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/Main.class" afterPath="$PROJECT_DIR$/out/production/edit++/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/TextFrame.class" afterPath="$PROJECT_DIR$/out/production/edit++/TextFrame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextFrame.java" afterPath="$PROJECT_DIR$/src/TextFrame.java" />
@@ -16,22 +18,29 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="191" column="284" lean-forward="false" selection-start-line="191" selection-start-column="284" selection-end-line="191" selection-end-column="284" />
+            <state relative-caret-position="342">
+              <caret line="288" column="31" lean-forward="false" selection-start-line="288" selection-start-column="31" selection-end-line="288" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
               <folding>
-                <element signature="method#Main#0;class#Main#0" expanded="false" />
-                <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-                <element signature="e#5985#6195#0" expanded="false" />
-                <element signature="e#6325#6537#0" expanded="false" />
-                <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-                <element signature="method#close#0;class#Main#0" expanded="false" />
+                <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+                <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
+                <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+                <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+                <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+                <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,6 +174,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -614,7 +623,10 @@
       <workItem from="1492925021996" duration="1042000" />
       <workItem from="1492926377023" duration="399000" />
       <workItem from="1493114391270" duration="223000" />
-      <workItem from="1493134418006" duration="5500000" />
+      <workItem from="1493134418006" duration="6156000" />
+      <workItem from="1493181189651" duration="746000" />
+      <workItem from="1493187986170" duration="601000" />
+      <workItem from="1493210395521" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="Changes done">
       <created>1492496076959</created>
@@ -805,11 +817,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493137882878</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added autocomplete for table to support all supported languages">
+      <created>1493140094427</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1493140094428</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43662000" />
+    <option name="totallyTimeSpent" value="50456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
@@ -822,10 +841,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.50292826" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -845,6 +864,37 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.50292826" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -915,7 +965,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -924,16 +974,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/Theme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10970">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6596">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8162">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/text/DefaultEditorKit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15552">
+          <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+          <folding>
+            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+          <folding>
+            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -942,14 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2214">
           <caret line="123" column="1" lean-forward="false" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,23 +1103,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4716">
           <caret line="262" column="0" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -983,10 +1113,11 @@
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -995,23 +1126,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2484">
           <caret line="138" column="57" lean-forward="false" selection-start-line="138" selection-start-column="57" selection-end-line="138" selection-end-column="57" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,14 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2214">
           <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,10 +1143,11 @@
           <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1048,23 +1156,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2754">
           <caret line="153" column="45" lean-forward="false" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,10 +1166,11 @@
           <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1086,23 +1179,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,10 +1189,11 @@
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1124,23 +1202,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
           <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="48" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,14 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,10 +1219,11 @@
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1177,14 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1192,23 +1239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2718">
           <caret line="151" column="16" lean-forward="true" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,10 +1249,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1230,23 +1262,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1782">
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="e#1615#1822#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
-            <element signature="method#newFile#0;class#Main#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,13 +1270,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
+            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1271,24 +1294,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1297,14 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1314,10 +1316,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1326,14 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,14 +1371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="110" column="13" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-          <folding>
-            <element signature="method#Find#0;class#Find#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Find#0" expanded="false" />
-            <element signature="method#find#0;class#Find#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Find#0" expanded="false" />
-            <element signature="method#closeDialog#0;class#Find#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Find#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,7 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10970">
           <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1399,7 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6596">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8162">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,10 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="e#8161#8162#0" expanded="true" />
-            <element signature="e#8203#8204#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1426,7 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15552">
           <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,7 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1442,38 +1420,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+        <state relative-caret-position="346">
+          <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
           <folding>
+            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="191" column="284" lean-forward="false" selection-start-line="191" selection-start-column="284" selection-end-line="191" selection-end-column="284" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#5985#6195#0" expanded="false" />
-            <element signature="e#6325#6537#0" expanded="false" />
-            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="method#close#0;class#Main#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="288" column="31" lean-forward="false" selection-start-line="288" selection-start-column="31" selection-end-line="288" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
