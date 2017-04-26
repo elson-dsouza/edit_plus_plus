@@ -212,11 +212,6 @@ public class Main extends JFrame implements ActionListener {
         edit.add(find);
         find.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_DOWN_MASK));
 
-        JMenuItem findAndReplace = new JMenuItem("Find And Replace");
-        findAndReplace.addActionListener(this);
-        edit.add(findAndReplace);
-        findAndReplace.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_DOWN_MASK));
-
         JMenuItem sall = new JMenuItem("Select All");
         sall.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_DOWN_MASK));
         sall.addActionListener(this);
@@ -310,12 +305,8 @@ public class Main extends JFrame implements ActionListener {
                 tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
                 break;
             case "Find":
-                FindAndReplace find = new FindAndReplace(tabInstances.get(tabbedPane.getSelectedIndex()), true, this,false);
-                find.showDialog();
-                break;
-            case "Find And Replace":
-                FindAndReplace find1 = new FindAndReplace(tabInstances.get(tabbedPane.getSelectedIndex()), true, this,true);
-                find1.showDialog();
+//                Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true, this);
+//                find.showDialog();
                 break;
             case "Plain Text":
                 language = SyntaxConstants.SYNTAX_STYLE_NONE;
