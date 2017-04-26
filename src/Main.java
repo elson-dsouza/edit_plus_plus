@@ -215,6 +215,7 @@ public class Main extends JFrame implements ActionListener {
 
         JMenuItem background_color=new JMenuItem("Background");
         edit.add(background_color);
+        background_color.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_B, InputEvent.CTRL_DOWN_MASK));
         background_color.addActionListener(e -> {
             Color c = JColorChooser.showDialog(Main.this,"Choose color",Color.white);
             int i=tabbedPane.getSelectedIndex();
@@ -223,6 +224,7 @@ public class Main extends JFrame implements ActionListener {
 
         JMenuItem text_color=new JMenuItem("Text Colour");
         edit.add(text_color);
+        text_color.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_DOWN_MASK));
         text_color.addActionListener(e -> {
             Color c = JColorChooser.showDialog(Main.this,"Choose color",Color.white);
             int i = tabbedPane.getSelectedIndex();
