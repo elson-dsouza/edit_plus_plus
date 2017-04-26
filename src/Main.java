@@ -32,6 +32,9 @@ public class Main extends JFrame implements ActionListener {
     private ArrayList<TextFrame> tabInstances;
     private String language;
     private HashMap<String,LanguageSupport> langs;
+    private JTextField searchField;
+    private JCheckBox regexCB;
+    private JCheckBox matchCaseCB;
 
     public static  void main(String[] args) {
         new Main("Edit++");
@@ -83,6 +86,7 @@ public class Main extends JFrame implements ActionListener {
         buildEditMenu();
         buildLanguageMenu();
         buildHelpMenu();
+        buildFindAndReplaceToolBar();
     }
 
     private void buildLanguageMenu() {
@@ -232,6 +236,29 @@ public class Main extends JFrame implements ActionListener {
         });
     }
 
+    private void buildFindAndReplaceToolBar(){
+        JToolBar toolBar = new JToolBar();
+        searchField = new JTextField(30);
+        toolBar.add(searchField);
+
+        JButton nextButton = new JButton("Find Next");
+        nextButton.setActionCommand("FindNext");
+        nextButton.addActionListener(this);
+        toolBar.add(nextButton);
+        searchField.addActionListener(e -> nextButton.doClick(0));
+
+        JButton prevButton = new JButton("Find Previous");
+        prevButton.setActionCommand("FindPrev");
+        prevButton.addActionListener(this);
+        toolBar.add(prevButton);
+
+        regexCB = new JCheckBox("Regex");
+        toolBar.add(regexCB);
+        matchCaseCB = new JCheckBox("Match Case");
+        toolBar.add(matchCaseCB);
+        this.add(toolBar, BorderLayout.NORTH);
+    }
+
     private void buildHelpMenu(){
         JMenu help=new JMenu("Help");
         menu.add(help);
@@ -278,8 +305,8 @@ public class Main extends JFrame implements ActionListener {
                 tabInstances.get(tabbedPane.getSelectedIndex()).textArea.paste();
                 break;
             case "Find":
-                Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true, this);
-                find.showDialog();
+//                Find find = new Find(tabInstances.get(tabbedPane.getSelectedIndex()), true, this);
+//                find.showDialog();
                 break;
             case "Plain Text":
                 language = SyntaxConstants.SYNTAX_STYLE_NONE;
