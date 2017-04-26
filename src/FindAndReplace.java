@@ -17,7 +17,6 @@ import java.util.regex.Pattern;
  * Created by Elson on 17/4/17.
  */
 
-<<<<<<< HEAD
 public class FindAndReplace extends JDialog implements ActionListener, KeyListener {
 
     private TextFrame parent;
@@ -169,53 +168,4 @@ public class FindAndReplace extends JDialog implements ActionListener, KeyListen
     @Override
     public void keyReleased(KeyEvent keyEvent){}
 
-=======
-public class FindAndReplace extends JFrame {
-
-    private static final long serialVersionUID = 1L;
-
-    private RSyntaxTextArea textArea;
-    private JTextField searchField;
-    private JCheckBox regexCB;
-    private JCheckBox matchCaseCB;
-
-    public FindAndReplace(RSyntaxTextArea textArea) {
-
-        this.textArea = textArea;
-
-
-        //setContentPane(cp);
-        setTitle("Find and Replace Demo");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        pack();
-        setLocationRelativeTo(null);
-
-    }
-
-    public void actionPerformed(ActionEvent e) {
-
-        // "FindNext" => search forward, "FindPrev" => search backward
-        String command = e.getActionCommand();
-        boolean forward = "FindNext".equals(command);
-
-        // Create an object defining our search parameters.
-        SearchContext context = new SearchContext();
-        String text = searchField.getText();
-        if (text.length() == 0) {
-            return;
-        }
-        context.setSearchFor(text);
-        context.setMatchCase(matchCaseCB.isSelected());
-        context.setRegularExpression(regexCB.isSelected());
-        context.setSearchForward(forward);
-        context.setWholeWord(false);
-
-        boolean found = SearchEngine.find(textArea, context).wasFound();
-        if (!found) {
-            JOptionPane.showMessageDialog(this, "Text not found");
-        }
-
-
-    }
->>>>>>> b5c1fd2... Working on find and replace
 }
