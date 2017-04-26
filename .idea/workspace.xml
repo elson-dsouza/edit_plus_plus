@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Find.java" afterPath="$PROJECT_DIR$/src/FindAndReplace.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/edit++/Find.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/Main.class" afterPath="$PROJECT_DIR$/out/production/edit++/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FindAndReplace.java" afterPath="$PROJECT_DIR$/src/FindAndReplace.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,20 +22,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="238" column="0" lean-forward="false" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
               <folding>
                 <element signature="method#Main#0;class#Main#0" expanded="false" />
                 <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-                <element signature="e#7472#7682#0" expanded="false" />
-                <element signature="e#7913#8125#0" expanded="false" />
+                <element signature="e#7730#7940#0" expanded="false" />
+                <element signature="e#8171#8383#0" expanded="false" />
+                <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
                 <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
                 <element signature="method#newFile#0;class#Main#0" expanded="false" />
                 <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-                <element signature="e#14845#15074#0" expanded="false" />
+                <element signature="e#15346#15575#0" expanded="false" />
                 <element signature="method#loadFile#0;class#Main#0" expanded="false" />
                 <element signature="method#close#0;class#Main#0" expanded="false" />
               </folding>
@@ -44,9 +45,12 @@
       <file leaf-file-name="FindAndReplace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FindAndReplace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="1216">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding>
+                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#3074#3075#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,8 +105,8 @@
         <option value="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JFrame.class" />
         <option value="$PROJECT_DIR$/src/TextFrame.java" />
         <option value="$PROJECT_DIR$/src/Find.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FindAndReplace.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -632,7 +636,7 @@
       <workItem from="1493134418006" duration="6156000" />
       <workItem from="1493181189651" duration="746000" />
       <workItem from="1493187986170" duration="601000" />
-      <workItem from="1493210395521" duration="7307000" />
+      <workItem from="1493210395521" duration="9818000" />
     </task>
     <task id="LOCAL-00001" summary="Changes done">
       <created>1492496076959</created>
@@ -851,11 +855,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493222507215</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Working on find and replace">
+      <created>1493224214321</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1493224214321</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56204000" />
+    <option name="totallyTimeSpent" value="58715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
@@ -871,7 +882,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.50292826" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -989,7 +1000,8 @@
     <MESSAGE value="Bug fixes" />
     <MESSAGE value="Added support for more languages" />
     <MESSAGE value="Changes done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes done" />
+    <MESSAGE value="Working on find and replace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on find and replace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,14 +1071,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1096,14 +1107,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1133,14 +1143,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1177,14 +1186,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1214,14 +1222,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1258,14 +1265,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1295,14 +1301,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1332,14 +1337,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1383,14 +1387,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1420,14 +1423,13 @@
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
@@ -1601,28 +1603,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FindAndReplace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="1216">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="238" column="0" lean-forward="false" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7472#7682#0" expanded="false" />
-            <element signature="e#7913#8125#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#Main#0" expanded="false" />
             <element signature="method#newFile#0;class#Main#0" expanded="false" />
             <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
-            <element signature="e#14845#15074#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
             <element signature="method#loadFile#0;class#Main#0" expanded="false" />
             <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
