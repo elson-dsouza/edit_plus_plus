@@ -16,6 +16,7 @@ public class TextFrame implements DocumentListener {
     RSyntaxTextArea textArea;
     private boolean changed = false;
     private File file;
+    private String language;
 
     TextFrame(File file, RSyntaxTextArea textArea, String language,HashMap<String,LanguageSupport> langs) {
         this.file = file;
@@ -24,14 +25,17 @@ public class TextFrame implements DocumentListener {
         if(file!=null)
             textArea.setText(readFile(file));
         changed = false;
-
+        this.language = language;
         setLanguage(language,langs);
     }
 
     void setLanguage(String language,HashMap<String,LanguageSupport> langs) {
         textArea.setSyntaxEditingStyle(language);
+        if (langs.containsKey(this.language))
+            langs.get(this.language).uninstall(textArea);
         if(langs.containsKey(language))
             langs.get(language).install(textArea);
+        this.language = language;
     }
 
     private String readFile(File file) {

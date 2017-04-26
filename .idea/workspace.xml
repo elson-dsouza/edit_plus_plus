@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="Added autocomplete for table to support all supported languages">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/Main.class" afterPath="$PROJECT_DIR$/out/production/edit++/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/TextFrame.class" afterPath="$PROJECT_DIR$/out/production/edit++/TextFrame.class" />
+    <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/com_fifesoft_rsyntaxtextarea_2_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit++.iml" afterPath="$PROJECT_DIR$/edit++.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextFrame.java" afterPath="$PROJECT_DIR$/src/TextFrame.java" />
     </list>
@@ -19,28 +20,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="288" column="31" lean-forward="false" selection-start-line="288" selection-start-column="31" selection-end-line="288" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="540">
+              <caret line="330" column="62" lean-forward="false" selection-start-line="330" selection-start-column="62" selection-end-line="330" selection-end-column="62" />
+              <folding>
+                <element signature="method#Main#0;class#Main#0" expanded="false" />
+                <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+                <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+                <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+                <element signature="e#7225#7435#0" expanded="false" />
+                <element signature="e#7565#7777#0" expanded="false" />
+                <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+                <element signature="method#newFile#0;class#Main#0" expanded="false" />
+                <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+                <element signature="e#13680#13909#0" expanded="false" />
+                <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+                <element signature="method#close#0;class#Main#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+            <state relative-caret-position="313">
+              <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
               <folding>
                 <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-                <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
                 <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
                 <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
                 <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-                <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+                <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+                <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -95,8 +109,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Find.java" />
         <option value="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JFrame.class" />
-        <option value="$PROJECT_DIR$/src/TextFrame.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/TextFrame.java" />
       </list>
     </option>
   </component>
@@ -626,7 +640,7 @@
       <workItem from="1493134418006" duration="6156000" />
       <workItem from="1493181189651" duration="746000" />
       <workItem from="1493187986170" duration="601000" />
-      <workItem from="1493210395521" duration="1559000" />
+      <workItem from="1493210395521" duration="4045000" />
     </task>
     <task id="LOCAL-00001" summary="Changes done">
       <created>1492496076959</created>
@@ -824,11 +838,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493140094428</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Bug fixes">
+      <created>1493217981449</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1493217981449</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50456000" />
+    <option name="totallyTimeSpent" value="52942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
@@ -954,18 +975,18 @@
     <MESSAGE value="Added line numbers" />
     <MESSAGE value="Set code folding and java trial for now" />
     <MESSAGE value="Vertical Scroll Bar bug fixed" />
-    <MESSAGE value="Bug fixes" />
     <MESSAGE value="Added options for C, C++, Java, Plain Text" />
     <MESSAGE value="Optimized imports" />
     <MESSAGE value="Improved code quality" />
     <MESSAGE value="Added text colour" />
     <MESSAGE value="Added autocomplete for java" />
     <MESSAGE value="Added autocomplete for table to support all supported languages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added autocomplete for table to support all supported languages" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1027,7 +1048,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,11 +1071,11 @@
           <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1050,7 +1084,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,11 +1107,11 @@
           <caret line="19" column="104" lean-forward="false" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1073,7 +1120,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,11 +1143,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1103,7 +1163,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4716">
           <caret line="262" column="0" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,11 +1186,11 @@
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1126,7 +1199,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2484">
           <caret line="138" column="57" lean-forward="false" selection-start-line="138" selection-start-column="57" selection-end-line="138" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,11 +1229,11 @@
           <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1156,7 +1242,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2754">
           <caret line="153" column="45" lean-forward="false" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,11 +1265,11 @@
           <caret line="73" column="76" lean-forward="false" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1179,7 +1278,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,11 +1301,11 @@
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1202,7 +1314,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
           <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1219,11 +1344,11 @@
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1239,7 +1364,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2718">
           <caret line="151" column="16" lean-forward="true" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1249,11 +1387,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1262,7 +1400,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1782">
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,11 +1430,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1294,11 +1445,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1316,11 +1467,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
             <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
             <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1423,26 +1574,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+        <state relative-caret-position="540">
+          <caret line="330" column="62" lean-forward="false" selection-start-line="330" selection-start-column="62" selection-end-line="330" selection-end-column="62" />
           <folding>
-            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#setLanguage#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
-            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-            <marker date="1493191898985" expanded="false" signature="3140:3146" ph="{...}" />
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7225#7435#0" expanded="false" />
+            <element signature="e#7565#7777#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#13680#13909#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="288" column="31" lean-forward="false" selection-start-line="288" selection-start-column="31" selection-end-line="288" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="313">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
+            <element signature="method#close#0;class#TextFrame#0" expanded="false" />
+            <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

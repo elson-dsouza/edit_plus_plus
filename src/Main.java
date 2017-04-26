@@ -68,7 +68,6 @@ public class Main extends JFrame implements ActionListener {
     private void initHashMap() {
         langs.put(SyntaxConstants.SYNTAX_STYLE_C,new CLanguageSupport());
         langs.put(SyntaxConstants.SYNTAX_STYLE_CSS,new CssLanguageSupport());
-        langs.put(SyntaxConstants.SYNTAX_STYLE_GROOVY,new GroovyLanguageSupport());
         langs.put(SyntaxConstants.SYNTAX_STYLE_HTML,new HtmlLanguageSupport());
         langs.put(SyntaxConstants.SYNTAX_STYLE_JAVA,new JavaLanguageSupport());
         langs.put(SyntaxConstants.SYNTAX_STYLE_JAVASCRIPT,new JavaScriptLanguageSupport());
@@ -105,6 +104,54 @@ public class Main extends JFrame implements ActionListener {
         JMenuItem t3 = new JMenuItem("C++");
         t3.addActionListener(this);
         lang.add(t3);
+
+        JMenuItem t4 = new JMenuItem("JSP");
+        t4.addActionListener(this);
+        lang.add(t4);
+
+        JMenuItem t5 = new JMenuItem("CSS");
+        t5.addActionListener(this);
+        lang.add(t5);
+
+        JMenuItem t6 = new JMenuItem("HTML");
+        t6.addActionListener(this);
+        lang.add(t6);
+
+        JMenuItem t7 = new JMenuItem("Javascript");
+        t7.addActionListener(this);
+        lang.add(t7);
+
+        JMenuItem t8 = new JMenuItem("Shell");
+        t8.addActionListener(this);
+        lang.add(t8);
+
+        JMenuItem t9 = new JMenuItem("XML");
+        t9.addActionListener(this);
+        lang.add(t9);
+
+        JMenuItem t10 = new JMenuItem("Groovy");
+        t10.addActionListener(this);
+        lang.add(t10);
+
+        JMenuItem t11 = new JMenuItem("Perl");
+        t11.addActionListener(this);
+        lang.add(t11);
+
+        JMenuItem t12 = new JMenuItem("PHP");
+        t12.addActionListener(this);
+        lang.add(t12);
+
+//        JMenuItem t13 = new JMenuItem("CSS");
+//        t13.addActionListener(this);
+//        lang.add(t13);
+//
+//        JMenuItem t14 = new JMenuItem("HTML");
+//        t14.addActionListener(this);
+//        lang.add(t14);
+//
+//        JMenuItem t15 = new JMenuItem("JAVASCRIPT");
+//        t15.addActionListener(this);
+//        lang.add(t15);
     }
 
     private void buildFileMenu() {
@@ -246,6 +293,42 @@ public class Main extends JFrame implements ActionListener {
                 break;
             case "C++":
                 language = SyntaxConstants.SYNTAX_STYLE_CPLUSPLUS;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "CSS":
+                language = SyntaxConstants.SYNTAX_STYLE_CSS;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "HTML":
+                language = SyntaxConstants.SYNTAX_STYLE_HTML;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "Javascript":
+                language = SyntaxConstants.SYNTAX_STYLE_JAVASCRIPT;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "JSP":
+                language = SyntaxConstants.SYNTAX_STYLE_JSP;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "Perl":
+                language = SyntaxConstants.SYNTAX_STYLE_PERL;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "PHP":
+                language = SyntaxConstants.SYNTAX_STYLE_PHP;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "Shell":
+                language = SyntaxConstants.SYNTAX_STYLE_UNIX_SHELL;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "XML":
+                language = SyntaxConstants.SYNTAX_STYLE_XML;
+                tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
+                break;
+            case "Groovy":
+                language = SyntaxConstants.SYNTAX_STYLE_GROOVY;
                 tabInstances.get(tabbedPane.getSelectedIndex()).setLanguage(language,langs);
                 break;
         }
