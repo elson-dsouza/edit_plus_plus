@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="Added dialog box for Find and Find And Replace">
+    <list default="true" id="c991aeca-7b44-466d-8f6e-2c738c89e8b0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/edit++/Find.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/edit++/Main.class" afterPath="$PROJECT_DIR$/out/production/edit++/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FindAndReplace.java" afterPath="$PROJECT_DIR$/src/FindAndReplace.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,57 +19,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="312" column="72" lean-forward="false" selection-start-line="312" selection-start-column="72" selection-end-line="312" selection-end-column="72" />
+            <state relative-caret-position="238">
+              <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
               <folding>
                 <element signature="method#Main#0;class#Main#0" expanded="false" />
-                <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-                <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
                 <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-                <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
                 <element signature="e#7730#7940#0" expanded="false" />
                 <element signature="e#8171#8383#0" expanded="false" />
                 <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
                 <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-                <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-                <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-                <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-                <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-                <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+                <element signature="method#newFile#0;class#Main#0" expanded="false" />
+                <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+                <element signature="e#15346#15575#0" expanded="false" />
+                <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+                <element signature="method#close#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-              <folding>
-                <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
-                <element signature="method#readFile#0;class#TextFrame#0" expanded="false" />
-                <element signature="method#saveFile#0;class#TextFrame#0" expanded="false" />
-                <element signature="method#saveAs#0;class#TextFrame#0" expanded="false" />
-                <element signature="method#close#0;class#TextFrame#0" expanded="false" />
-                <marker date="1493220025469" expanded="false" signature="3340:3346" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FindAndReplace.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FindAndReplace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FindAndReplace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2622">
-              <caret line="216" column="5" lean-forward="false" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
+            <state relative-caret-position="1216">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
-                <element signature="e#2970#2971#0" expanded="true" />
-                <element signature="e#3002#3003#0" expanded="true" />
+                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#3074#3075#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,8 +105,8 @@
         <option value="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JFrame.class" />
         <option value="$PROJECT_DIR$/src/TextFrame.java" />
         <option value="$PROJECT_DIR$/src/Find.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FindAndReplace.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -158,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -185,10 +167,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edit++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edit++" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -639,11 +636,7 @@
       <workItem from="1493134418006" duration="6156000" />
       <workItem from="1493181189651" duration="746000" />
       <workItem from="1493187986170" duration="601000" />
-      <workItem from="1493210395521" duration="9960000" />
-      <workItem from="1493267779684" duration="386000" />
-      <workItem from="1493268306025" duration="1846000" />
-      <workItem from="1493270379658" duration="2000" />
-      <workItem from="1493304744213" duration="1812000" />
+      <workItem from="1493210395521" duration="9818000" />
     </task>
     <task id="LOCAL-00001" summary="Changes done">
       <created>1492496076959</created>
@@ -869,21 +862,15 @@
       <option name="project" value="LOCAL" />
       <updated>1493224214321</updated>
     </task>
-    <task id="LOCAL-00033" summary="Added dialog box for Find and Find And Replace">
-      <created>1493228377331</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1493228377331</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62907000" />
+    <option name="totallyTimeSpent" value="58715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -892,10 +879,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.5058565" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.50292826" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.4941435" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -909,34 +896,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30493274" sideWeight="0.5058565" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30493274" sideWeight="0.4941435" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1037,8 +1001,7 @@
     <MESSAGE value="Added support for more languages" />
     <MESSAGE value="Changes done" />
     <MESSAGE value="Working on find and replace" />
-    <MESSAGE value="Added dialog box for Find and Find And Replace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dialog box for Find and Find And Replace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on find and replace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1051,9 +1014,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/Theme.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxView.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/Theme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10970">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6596">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8162">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/text/DefaultEditorKit.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1061,29 +1042,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15552">
+          <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="42" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1109,20 +1105,17 @@
           <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="42" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1148,20 +1141,17 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1194,20 +1184,17 @@
           <caret line="262" column="0" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1233,20 +1220,17 @@
           <caret line="138" column="57" lean-forward="false" selection-start-line="138" selection-start-column="57" selection-end-line="138" selection-end-column="57" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1279,20 +1263,17 @@
           <caret line="153" column="45" lean-forward="false" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1318,20 +1299,17 @@
           <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1357,20 +1335,17 @@
           <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="48" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1410,20 +1385,17 @@
           <caret line="151" column="16" lean-forward="true" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1449,20 +1421,17 @@
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
             <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
             <element signature="e#7730#7940#0" expanded="false" />
             <element signature="e#8171#8383#0" expanded="false" />
             <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
             <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1568,9 +1537,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/Theme.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxView.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/Theme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10970">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6596">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/SyntaxView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8162">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/text/DefaultEditorKit.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1578,12 +1565,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15552">
+          <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.6.1.jar!/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TextFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="378">
           <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
           <folding>
             <element signature="method#TextFrame#0;class#TextFrame#0" expanded="false" />
@@ -1596,37 +1601,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/FindAndReplace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="312" column="72" lean-forward="false" selection-start-line="312" selection-start-column="72" selection-end-line="312" selection-end-column="72" />
+        <state relative-caret-position="1216">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#initHashMap#0;class#Main#0" expanded="false" />
-            <element signature="method#buildMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
-            <element signature="method#buildEditMenu#0;class#Main#0" expanded="false" />
-            <element signature="e#7730#7940#0" expanded="false" />
-            <element signature="e#8171#8383#0" expanded="false" />
-            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
-            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
-            <marker date="1493306716204" expanded="false" signature="14180:14796" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="14855:15584" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15361:15575" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="15614:16886" ph="{...}" />
-            <marker date="1493306716204" expanded="false" signature="16913:17069" ph="{...}" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FindAndReplace.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="216" column="5" lean-forward="false" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
           <folding>
-            <element signature="e#2970#2971#0" expanded="true" />
-            <element signature="e#3002#3003#0" expanded="true" />
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="method#buildLanguageMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#buildFileMenu#0;class#Main#0" expanded="false" />
+            <element signature="e#7730#7940#0" expanded="false" />
+            <element signature="e#8171#8383#0" expanded="false" />
+            <element signature="method#buildFindAndReplaceToolBar#0;class#Main#0" expanded="false" />
+            <element signature="method#buildHelpMenu#0;class#Main#0" expanded="false" />
+            <element signature="method#newFile#0;class#Main#0" expanded="false" />
+            <element signature="method#setTabClosable#0;class#Main#0" expanded="false" />
+            <element signature="e#15346#15575#0" expanded="false" />
+            <element signature="method#loadFile#0;class#Main#0" expanded="false" />
+            <element signature="method#close#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
