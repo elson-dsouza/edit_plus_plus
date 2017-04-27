@@ -1,8 +1,7 @@
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
-import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
-import org.fife.ui.rtextarea.RTextScrollPane;
 import org.fife.ui.rtextarea.SearchContext;
 import org.fife.ui.rtextarea.SearchEngine;
+import org.fife.ui.rtextarea.SearchResult;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,16 +10,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by Elson on 17/4/17.
  */
 
-<<<<<<< HEAD
 public class FindAndReplace extends JDialog implements ActionListener, KeyListener {
 
-    private TextFrame parent;
+    private RSyntaxTextArea parent;
     private JTextField textFieldFind;
     private JCheckBox caseSensitive;
     private boolean finishedFinding = true;
@@ -30,7 +27,7 @@ public class FindAndReplace extends JDialog implements ActionListener, KeyListen
 
     FindAndReplace(TextFrame parent, boolean modal, Main main, boolean replace) {
         super(main, modal);
-        this.parent = parent;
+        this.parent = parent.textArea;
         getContentPane().addKeyListener(this);
         getContentPane().setFocusable(true);
         if(!replace) {
@@ -137,18 +134,19 @@ public class FindAndReplace extends JDialog implements ActionListener, KeyListen
 
     @Override
     public void actionPerformed(ActionEvent e) {
-//        String cmd = e.getActionCommand();
-//        if (cmd.equals("Find")) {
-//            String input = textField.getText();
-//            StringBuilder pattern = new StringBuilder();
-//            if (!caseSensitive.isSelected()) {
-//                pattern.append("(?i)");
-//            }
-//            pattern.append(input);
-//            find(pattern.toString());
-//        } else if (cmd.equals("Close")) {
-//            closeDialog();
-//        }
+        String cmd = e.getActionCommand();
+        switch (cmd){
+            case "Find":    SearchContext searchContext = new SearchContext();
+                            searchContext.setMatchCase(caseSensitive.isSelected());
+                            searchContext.setRegularExpression(regularExpression.isSelected());
+                            searchContext.setSearchFor(textFieldFind.getText());
+                            SearchResult x =SearchEngine.find(parent,searchContext);
+                            x.setMarkedCount(1);
+                            break;
+
+            case "Close":   closeDialog();
+
+        }
     }
 
     private void closeDialog() {
@@ -217,5 +215,4 @@ public class FindAndReplace extends JFrame {
 
 
     }
->>>>>>> b5c1fd2... Working on find and replace
 }
